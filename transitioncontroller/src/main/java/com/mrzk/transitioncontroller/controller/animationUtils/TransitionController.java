@@ -183,7 +183,6 @@ public class TransitionController {
             ((ViewGroup) activity.findViewById(Window.ID_ANDROID_CONTENT)).removeView(mContainer);
             activity.finish();
             activity.overridePendingTransition(0,0);
-
             ((ViewGroup) mFirstActivity.findViewById(Window.ID_ANDROID_CONTENT)).addView(mContainer);
             mContainer.setVisibility(View.VISIBLE);
 
