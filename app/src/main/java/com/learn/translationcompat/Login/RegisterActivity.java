@@ -2,6 +2,7 @@ package com.learn.translationcompat.Login;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
+import android.widget.Button;
 
 import com.learn.translationcompat.R;
 import com.mrzk.transitioncontroller.controller.animationUtils.TransitionController;
@@ -21,7 +23,8 @@ import com.mrzk.transitioncontroller.controller.listener.TransitionCustomListene
 
 public class RegisterActivity extends AppCompatActivity {
     private FloatingActionButton mFloatingActionButton;
-    CardView mCardView;
+    private CardView mCardView;
+    private Button btnEnsure;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         mFloatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
         mCardView = (CardView) findViewById(R.id.cv_add);
+        btnEnsure = (Button) findViewById(R.id.bt_go);
         mCardView.setVisibility(View.INVISIBLE);
         TransitionController.getInstance().setEnterListener(new TransitionCustomListener() {
             @Override
@@ -51,6 +55,13 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 animateRevealClose();
+            }
+        });
+        btnEnsure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),PersonalInformationActivity.class);
+                startActivity(intent);
             }
         });
     }

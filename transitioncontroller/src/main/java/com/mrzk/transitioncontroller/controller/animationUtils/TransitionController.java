@@ -107,8 +107,6 @@ public class TransitionController {
 
                 View virtalView = new View(activity);
                 Bitmap cacheBitmap = BitmapUtil.getCacheBitmapFromView(next_view);
-
-
                 // 获取上一个界面中，元素的宽度和高度
                 final int mOriginWidth = mRect.right - mRect.left;
                 final int mOriginHeight = mRect.bottom - mRect.top;
