@@ -3,6 +3,7 @@ package com.learn.translationcompat.Login;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
 
 import com.learn.translationcompat.R;
 

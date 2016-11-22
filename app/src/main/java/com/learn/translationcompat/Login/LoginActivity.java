@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 
 import com.learn.translationcompat.R;
@@ -16,7 +17,7 @@ import com.mrzk.transitioncontroller.controller.animationUtils.TransitionControl
  * Created by Administrator on 2016/11/7 0007.
  */
 
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends AppCompatActivity {
 
     private EditText etUsername;
     private EditText etPassword;

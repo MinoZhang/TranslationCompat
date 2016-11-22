@@ -6,8 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.learn.translationcompat.Login.LoginActivity;
+import com.learn.translationcompat.pagelist.PageListActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 break;
             case R.id.btn_list1:
+                startActivity(new Intent(MainActivity.this, PageListActivity.class));
                 break;
             case R.id.btn_list2:
+                intent = new Intent(MainActivity.this, PageListActivity.class);
+                intent.putExtra("type",2);
+                startActivity(intent);
                 break;
             case R.id.btn_list3:
+                intent = new Intent(MainActivity.this, PageListActivity.class);
+                intent.putExtra("type",3);
+                startActivity(intent);
                 break;
         }
     }

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -54,6 +55,7 @@ public class PersonalInformationActivity extends AppCompatActivity {
         accountImage = (ImageView) findViewById(R.id.account_image);
         accountName  = (EditText) findViewById(R.id.account_name);
         accountSignature = (EditText) findViewById(R.id.account_signature);
+        mRadioGroup = (RadioGroup) findViewById(R.id.check_gender);
         mButton = (Button) findViewById(R.id.btn_ensure);
     }
 

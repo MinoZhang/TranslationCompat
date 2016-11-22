@@ -23,6 +23,11 @@
         <activity android:name=".Login.RegisterActivity"/>
         <activity android:name=".Login.ForgetPasswordActivity"/>
         <activity android:name=".Login.PersonalInformationActivity"/>
+        <activity android:name=".pagelist.PageListActivity"/>
+        <activity android:name=".pagelist.PageDetailActivity"/>
+        <activity android:name=".pagelist.PageDetail2Activity"/>
+        <activity android:name=".pagelist.PageDetail3Activity"/>
+
     </application>
 
 </manifest>

@@ -21,7 +21,7 @@ import com.mrzk.transitioncontroller.controller.listener.TransitionCustomListene
  * Created by Administrator on 2016/11/8 0008.
  */
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity{
     private FloatingActionButton mFloatingActionButton;
     private CardView mCardView;
     private Button btnEnsure;
