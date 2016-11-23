@@ -24,9 +24,12 @@
         <activity android:name=".Login.ForgetPasswordActivity"/>
         <activity android:name=".Login.PersonalInformationActivity"/>
         <activity android:name=".pagelist.PageListActivity"/>
-        <activity android:name=".pagelist.PageDetailActivity"/>
-        <activity android:name=".pagelist.PageDetail2Activity"/>
-        <activity android:name=".pagelist.PageDetail3Activity"/>
+        <activity android:name=".pagelist.PageDetailActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".pagelist.PageDetail2Activity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".pagelist.PageDetail3Activity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 

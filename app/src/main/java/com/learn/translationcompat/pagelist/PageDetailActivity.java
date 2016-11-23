@@ -25,9 +25,7 @@ public class PageDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagedetail);
-
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-
         getSupportActionBar().hide();
         nsv = (NestedScrollView) findViewById(R.id.nsv);
         nsv.setVisibility(View.INVISIBLE);
