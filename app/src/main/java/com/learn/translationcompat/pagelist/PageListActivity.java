@@ -17,12 +17,10 @@ import com.mrzk.transitioncontroller.controller.animationUtils.ViewAnimationComp
 
 public class PageListActivity extends AppCompatActivity {
 
-    private int type = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_list);
-        type = getIntent().getIntExtra("type",1);
         ListView lv = (ListView) findViewById(R.id.lv);
         lv.setAdapter(new MyBaseAdapter());
     }
@@ -62,24 +60,14 @@ public class PageListActivity extends AppCompatActivity {
 
             ImageView imageView = (ImageView) convertView.findViewById(R.id.customImage);
 
-            if (type == 1){
-                imageView.setImageResource(R.drawable.list1);
-            }else if (type == 2){
-                imageView.setImageResource(R.drawable.list2);
-            }else if (type == 3){
-                imageView.setImageResource(R.drawable.list3);
-            }
+            imageView.setImageResource(R.drawable.list1);
 
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (type == 1){
+
                         TransitionController.getInstance().startActivity(PageListActivity.this,new Intent(PageListActivity.this,PageDetailActivity.class),v,R.id.iv_second);
-                    }else if (type == 2){
-                        TransitionController.getInstance().startActivity(PageListActivity.this,new Intent(PageListActivity.this,PageDetail2Activity.class),v,R.id.iv_second);
-                    }else if (type == 3){
-                        TransitionController.getInstance().startActivity(PageListActivity.this,new Intent(PageListActivity.this,PageDetail3Activity.class),v,R.id.iv_second);
-                    }
+
                 }
             });
             return convertView;

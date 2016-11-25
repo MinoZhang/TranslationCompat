@@ -7,9 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
@@ -68,7 +66,6 @@ public class ForgetPasswordActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String ans1 = answer1.getText().toString();
                 String ans2 = answer2.getText().toString();
-                Log.i("asd", "onClick: "+ans1+ans2);
                 if (ans1.equals("")||ans2.equals("")){
                     Toast.makeText(ForgetPasswordActivity.this, "不回答就想知道密码？Too young！", Toast.LENGTH_SHORT).show();
                 }else {
@@ -90,7 +87,7 @@ public class ForgetPasswordActivity extends AppCompatActivity {
                 Toast.makeText(this, "想清楚再写,写错后果自负", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.et_answer2:
-                Toast.makeText(this, "前一题答案真的是这个吗？你不改一改？", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "你的账号是这个吗？确定？", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

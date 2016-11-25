@@ -15,22 +15,4 @@
         style="@style/ButtonTheme"
         android:text="MaterialLoginCompat"
         />
-    <Button
-        android:onClick="onClick"
-        android:id="@+id/btn_list1"
-        style="@style/ButtonTheme"
-        android:text="List_One"
-        />
-    <Button
-        android:onClick="onClick"
-        android:id="@+id/btn_list2"
-        style="@style/ButtonTheme"
-        android:text="List_Two"
-        />
-    <Button
-        android:onClick="onClick"
-        android:id="@+id/btn_list3"
-        style="@style/ButtonTheme"
-        android:text="List_Three"
-        />
 </LinearLayout>
