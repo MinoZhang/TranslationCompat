@@ -14,6 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.learn.translationcompat.R;
+import com.learn.translationcompat.Utils.UploadPicUtil;
 
 
 /**
@@ -46,6 +47,18 @@ public class PersonalInformationActivity extends AppCompatActivity {
                 chooseDialog.show();
                 ImageView makePhoto = (ImageView) dialog.findViewById(R.id.tv_makePhoto);
                 ImageView goPhoto = (ImageView) dialog.findViewById(R.id.tv_goPhoto);
+                makePhoto.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        UploadPicUtil.openCamera(PersonalInformationActivity.this,1);
+                    }
+                });
+                goPhoto.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        UploadPicUtil.openPhotoAlbum(PersonalInformationActivity.this,2);
+                    }
+                });
 
             }
         });
