@@ -32,7 +32,13 @@ public class PersonalInformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personnal);
         intView();
+        showGuid();
         initListener();
+    }
+
+    private void showGuid() {
+
+
     }
 
     private void initListener() {
